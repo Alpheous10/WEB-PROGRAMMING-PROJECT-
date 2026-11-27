@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFF8EE">
+  <meta name="description" content="A learning and community platform for YMCA Sierra Leone members, mentors and young people.">
+  <title>YMCA Sierra Leone | Members’ Community</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <!-- BEGIN SHARED HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="YMCA Sierra Leone home">
+        <span class="brand-mark"><img src="assets/logo.png" alt="Y"></span>
+        <span class="brand-name"><strong>YMCA SIERRA LEONE</strong><span>Members’ community</span></span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-controls="public-nav" aria-expanded="false"><span class="menu-icon" aria-hidden="true"></span><span>Menu</span></button>
+      <!-- BEGIN SHARED NAVIGATION -->
+      <nav class="site-nav" id="public-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a><a href="about.html">About</a><a href="events.html">Events</a><a href="resources.html">Resources</a><a href="community.html">Community</a><a href="login.html">Login</a><a href="signup.html">Sign up</a>
+      </nav><!-- END SHARED NAVIGATION -->
+    </div>
+  </header><!-- END SHARED HEADER -->
+
+  <main class="container page-main">
+    <section class="card hero-card" id="about" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow">Since 1912 · Freetown, Sierra Leone</span>
+        <h1 id="hero-title">Empowering Young People for the African Renaissance.</h1>
+        <p>YMCA Sierra Leone is an ecumenical Christian organisation enhancing the capacity of young people through collaborative approaches for self-reliance and holistic development.</p>
+        <div class="hero-actions"><a class="button button-primary" href="signup.html">Join the community</a><a class="button button-outline" href="login.html">Member login</a></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="hero-art-inner">Learn<br>Serve<br>Lead</div></div>
+    </section>
+
+    <section class="stats-strip" aria-label="YMCA Sierra Leone at a glance">
+      <div class="stat"><strong>1912</strong><span>Founded</span></div><div class="stat"><strong><!-- PHP: echo member count -->1,000+</strong><span>Members</span></div><div class="stat"><strong><!-- PHP: echo staff count -->100</strong><span>Staff</span></div><div class="stat"><strong><!-- PHP: echo community count -->23</strong><span>Communities</span></div>
+    </section>
+
+    <section class="section" id="values" aria-labelledby="values-heading">
+      <div class="section-title"><div><span class="eyebrow">What guides us</span><h2 id="values-heading">Our core values</h2></div><p>Our values are Christianity, Respect, Care, Tolerance, Spiritual Uplifting and Honesty.</p></div>
+      <div class="grid values-grid">
+        <article class="card value-card"><h3>Christianity</h3><p>We are a Christian organisation.</p></article>
+        <article class="card value-card"><h3>Respect</h3><p>We respect everyone&apos;s opinions and views.</p></article>
+        <article class="card value-card"><h3>Care</h3><p>We care for people and our environment.</p></article>
+        <article class="card value-card"><h3>Tolerance</h3><p>We tolerate diversity and partnership.</p></article>
+        <article class="card value-card"><h3>Spiritual Uplifting</h3><p>We spiritually uplift each other through our Christian values.</p></article>
+        <article class="card value-card"><h3>Honesty</h3><p>We value honesty.</p></article>
+      </div>
+    </section>
+
+    <section class="section card" id="bulletin" aria-labelledby="bulletin-heading">
+      <div class="section-title"><div><span class="eyebrow">Learn, connect, take part</span><h2 id="bulletin-heading">Upcoming events</h2></div><a href="events.html">Browse all events</a></div>
+      <div class="bulletin-list">
+        <!-- REPEATABLE: one event card per database row -->
+        <!-- PLACEHOLDER: replace with real event data -->
+        <article class="event-teaser"><div class="date-block"><strong>12</strong><span>Dec · Sat</span></div><div><h3>Community Leadership Training</h3><p>Venue to be confirmed · 10:00</p></div><a href="login.html">Sign in to register</a></article>
+        <!-- PLACEHOLDER: replace with real event data -->
+        <article class="event-teaser"><div class="date-block"><strong>19</strong><span>Dec · Sat</span></div><div><h3>Digital Skills Masterclass</h3><p>Time and venue to be confirmed</p></div><a href="login.html">Sign in to register</a></article>
+        <!-- PLACEHOLDER: replace with real event data -->
+        <article class="event-teaser"><div class="date-block"><strong>09</strong><span>Jan · Sat</span></div><div><h3>Youth Career Fair Preparation</h3><p>Time and venue to be confirmed</p></div><a href="login.html">Sign in to register</a></article>
+      </div>
+    </section>
+  </main>
+
+  <!-- BEGIN SHARED FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <nav aria-label="Explore"><h2>Explore</h2><ul><li><a href="about.html">About YMCA Sierra Leone</a></li><li><a href="events.html">Events</a></li><li><a href="resources.html">Resources</a></li><li><a href="community.html">Community</a></li></ul></nav>
+        <nav aria-label="Member links"><h2>Members</h2><ul><li><a href="index.html">Home</a></li><li><a href="login.html">Login</a></li><li><a href="signup.html">Sign up</a></li><li><a href="mentorship.html">Mentorship</a></li></ul></nav>
+        <address><h2>Contact</h2><p>32 Fort Street, Freetown, Sierra Leone<br>P.O. Box 243, Freetown</p><p><a href="tel:+23222223608">+232-22-223608</a><br><a href="tel:+23278952818">+232-78-952818</a><br>WhatsApp: <a href="https://wa.me/23278952805">+232-78-952805</a></p><p><a href="mailto:info@ymcasierraleone.org">info@ymcasierraleone.org</a><br><a href="mailto:ymcasl@yahoo.co.uk">ymcasl@yahoo.co.uk</a></p></address>
+      </div>
+      <div class="footer-bottom">Academic project, not the official YMCA Sierra Leone website.</div>
+    </div>
+  </footer><!-- END SHARED FOOTER -->
+</body>
+</html>

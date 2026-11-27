@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFF8EE">
+  <meta name="description" content="Browse learning guides, tutorials, career materials and templates for YMCA Sierra Leone members.">
+  <title>Resources | YMCA Sierra Leone</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <!-- BEGIN SHARED HEADER -->
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="YMCA Sierra Leone home"><span class="brand-mark"><img src="assets/logo.png" alt="YMCA Sierra Leone logo"></span><span class="brand-name"><strong>YMCA SIERRA LEONE</strong><span>Members’ community</span></span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-controls="public-nav" aria-expanded="false"><span class="menu-icon" aria-hidden="true"></span><span>Menu</span></button>
+    <!-- BEGIN SHARED NAVIGATION --><nav class="site-nav" id="public-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="events.html">Events</a><a href="resources.html" aria-current="page">Resources</a><a href="community.html">Community</a><a href="login.html">Login</a><a href="signup.html">Sign up</a></nav><!-- END SHARED NAVIGATION -->
+  </div></header><!-- END SHARED HEADER -->
+
+  <main class="container page-main">
+    <header class="page-intro"><span class="eyebrow">Learn at your own pace</span><h1>Member resource library</h1><p>Browse sample guides, tutorials, career materials and templates.</p></header>
+
+    <section class="card resource-tools" aria-labelledby="resource-filter-title">
+      <div class="card-heading"><div><h2 id="resource-filter-title">Find a resource</h2><p>Search and sort the sample library.</p></div></div>
+      <div class="resource-controls">
+        <div class="field resource-search"><label for="resource-search">Search resources</label><input id="resource-search" type="search" placeholder="Search by title or description" data-resource-search></div>
+        <fieldset class="filter-fieldset"><legend class="field-label">Category</legend><div class="chip-group" role="group" aria-label="Filter resources by category"><button class="chip-filter is-active" type="button" data-resource-category="all" aria-pressed="true">All</button><button class="chip-filter" type="button" data-resource-category="guides" aria-pressed="false">Guides</button><button class="chip-filter" type="button" data-resource-category="tutorials" aria-pressed="false">Tutorials</button><button class="chip-filter" type="button" data-resource-category="career" aria-pressed="false">Career</button><button class="chip-filter" type="button" data-resource-category="templates" aria-pressed="false">Templates</button></div></fieldset>
+        <div class="field resource-sort"><label for="resource-sort">Sort by</label><select id="resource-sort" class="toolbar-select" data-resource-sort><option value="newest">Newest</option><option value="az">A to Z</option></select></div>
+      </div>
+    </section>
+
+    <section class="resource-library section" aria-label="Resources">
+      <div class="resource-grid" data-resource-grid>
+        <article class="card resource-card" data-resource-card data-category="career" data-newest="4">
+          <!-- PLACEHOLDER: replace with real resource data and file -->
+          <div class="resource-card__top"><span class="resource-type resource-type--pdf">PDF</span><span class="resource-size">1.2 MB</span></div>
+          <h2>Career Guidance Handbook</h2><p>A sample guide for exploring career paths and planning next steps.</p>
+          <div class="resource-card__actions"><svg class="download-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/></svg><button class="button button-primary button-small" type="button" data-resource-download>Download</button></div>
+        </article>
+        <article class="card resource-card" data-resource-card data-category="templates" data-newest="3">
+          <!-- PLACEHOLDER: replace with real resource data and file -->
+          <div class="resource-card__top"><span class="resource-type resource-type--docx">DOCX</span><span class="resource-size">Size not supplied</span></div>
+          <h2>CV and Interview Checklist</h2><p>A sample checklist for preparing application materials and interview answers.</p>
+          <div class="resource-card__actions"><svg class="download-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/></svg><button class="button button-primary button-small" type="button" data-resource-download>Download</button></div>
+        </article>
+        <article class="card resource-card" data-resource-card data-category="tutorials" data-newest="2">
+          <!-- PLACEHOLDER: replace with real resource data and file -->
+          <div class="resource-card__top"><span class="resource-type resource-type--pdf">PDF</span><span class="resource-size">Size not supplied</span></div>
+          <h2>Web Basics, Week 1 Notes</h2><p>A sample set of notes introducing essential web basics.</p>
+          <div class="resource-card__actions"><svg class="download-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/></svg><button class="button button-primary button-small" type="button" data-resource-download>Download</button></div>
+        </article>
+        <article class="card resource-card" data-resource-card data-category="guides" data-newest="1">
+          <!-- PLACEHOLDER: replace with real resource data and file -->
+          <div class="resource-card__top"><span class="resource-type resource-type--pdf">PDF</span><span class="resource-size">Size not supplied</span></div>
+          <h2>Leadership Skills Starter Pack</h2><p>A sample collection of prompts for practising leadership skills.</p>
+          <div class="resource-card__actions"><svg class="download-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 17v4h14v-4"/></svg><button class="button button-primary button-small" type="button" data-resource-download>Download</button></div>
+        </article>
+      </div>
+      <div class="resource-empty" data-resource-empty hidden role="status"><div class="empty-illustration" aria-hidden="true"><span class="empty-shape empty-shape--one"></span><span class="empty-shape empty-shape--two"></span><span class="empty-shape empty-shape--three"></span><span class="empty-search"></span></div><h2>No matching resources</h2><p>Try another search or choose a different category to explore the library.</p><button class="button button-quiet button-small" type="button" data-resource-reset>Clear filters</button></div>
+    </section>
+
+    <section class="card external-resources section" aria-labelledby="external-title"><div class="card-heading"><div><span class="eyebrow">More to explore</span><h2 id="external-title">From the YMCA Sierra Leone website</h2></div></div><p>Visit these pages on the YMCA Sierra Leone website:</p><ul class="external-link-list"><li><a href="https://sierraleoneymca.org/publications-2/" target="_blank" rel="noopener noreferrer">Publications <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></li><li><a href="https://sierraleoneymca.org/reports/" target="_blank" rel="noopener noreferrer">Reports <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></li></ul></section>
+  </main>
+
+  <!-- BEGIN SHARED FOOTER -->
+  <footer class="site-footer"><div class="container"><div class="footer-grid">
+    <nav aria-label="Explore"><h2>Explore</h2><ul><li><a href="about.html">About YMCA Sierra Leone</a></li><li><a href="events.html">Events</a></li><li><a href="resources.html">Resources</a></li><li><a href="community.html">Community</a></li></ul></nav>
+    <nav aria-label="Member links"><h2>Members</h2><ul><li><a href="index.html">Home</a></li><li><a href="login.html">Login</a></li><li><a href="signup.html">Sign up</a></li><li><a href="mentorship.html">Mentorship</a></li></ul></nav>
+    <address><h2>Contact</h2><p>32 Fort Street, Freetown, Sierra Leone<br>P.O. Box 243, Freetown</p><p><a href="tel:+23222223608">+232-22-223608</a><br><a href="tel:+23278952818">+232-78-952818</a><br>WhatsApp: <a href="https://wa.me/23278952805">+232-78-952805</a></p><p><a href="mailto:info@ymcasierraleone.org">info@ymcasierraleone.org</a><br><a href="mailto:ymcasl@yahoo.co.uk">ymcasl@yahoo.co.uk</a></p></address>
+  </div><div class="footer-bottom">Academic project, not the official YMCA Sierra Leone website.</div></div></footer><!-- END SHARED FOOTER -->
+</body>
+</html>

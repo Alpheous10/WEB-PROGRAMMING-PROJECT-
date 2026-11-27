@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFF8EE">
+  <meta name="description" content="Join member conversations, share ideas and support one another in the YMCA Sierra Leone community.">
+  <title>Community | YMCA Sierra Leone</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <!-- BEGIN SHARED HEADER -->
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="YMCA Sierra Leone home"><span class="brand-mark"><img src="assets/logo.png" alt="YMCA Sierra Leone logo"></span><span class="brand-name"><strong>YMCA SIERRA LEONE</strong><span>Members’ community</span></span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-controls="public-nav" aria-expanded="false"><span class="menu-icon" aria-hidden="true"></span><span>Menu</span></button>
+    <!-- BEGIN SHARED NAVIGATION --><nav class="site-nav" id="public-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="events.html">Events</a><a href="resources.html">Resources</a><a href="community.html" aria-current="page">Community</a><a href="login.html">Login</a><a href="signup.html">Sign up</a></nav><!-- END SHARED NAVIGATION -->
+  </div></header><!-- END SHARED HEADER -->
+
+  <main class="container page-main">
+    <header class="page-intro page-intro--row"><div><span class="eyebrow">Listen · Share · Encourage</span><h1>Member community</h1><p>Ask questions, exchange ideas and encourage one another.</p></div><button class="button button-primary" type="button" data-open-topic>Start a new topic</button></header>
+    <div class="community-layout community-layout--public">
+      <aside class="card topic-panel" aria-labelledby="topics-title">
+        <div class="card-heading"><div><span class="eyebrow">Find your conversation</span><h2 id="topics-title">Topics</h2></div></div>
+        <fieldset class="filter-fieldset"><legend class="field-label">Categories</legend><div class="chip-group" role="group" aria-label="Filter topics by category"><button class="chip-filter" type="button" data-topic-category="general" aria-pressed="false">General</button><button class="chip-filter" type="button" data-topic-category="training-help" aria-pressed="false">Training Help</button><button class="chip-filter is-active" type="button" data-topic-category="careers" aria-pressed="true">Careers</button><button class="chip-filter" type="button" data-topic-category="mentorship" aria-pressed="false">Mentorship</button></div></fieldset>
+        <ul class="topic-list public-topic-list">
+          <!-- PLACEHOLDER: replace with real discussion topics and activity -->
+          <li data-topic data-topic-category="careers"><a class="topic-link" href="#thread" aria-current="page"><span><strong>What belongs on a first CV?</strong><small>Careers · 3 replies · 2 hours ago</small></span><span class="topic-count" aria-label="3 replies">3</span></a></li>
+          <li data-topic data-topic-category="training-help"><a class="topic-link" href="#thread"><span><strong>How do you practise new computer skills?</strong><small>Training Help · 5 replies · Yesterday</small></span><span class="topic-count" aria-label="5 replies">5</span></a></li>
+          <li data-topic data-topic-category="mentorship"><a class="topic-link" href="#thread"><span><strong>Finding a mentor for a new goal</strong><small>Mentorship · 12 replies · 2 days ago</small></span><span class="topic-count" aria-label="12 replies">12</span></a></li>
+          <li data-topic data-topic-category="general"><a class="topic-link" href="#thread"><span><strong>Small ways to support your community</strong><small>General · 4 replies · 3 days ago</small></span><span class="topic-count" aria-label="4 replies">4</span></a></li>
+        </ul>
+        <p class="empty-state" data-topic-empty hidden>No topics in this category yet.</p>
+      </aside>
+
+      <section class="card thread-panel" id="thread" aria-labelledby="thread-title">
+        <!-- PLACEHOLDER: replace with real discussion content -->
+        <div class="card-heading"><div><span class="eyebrow">Careers · 3 replies</span><h2 class="thread-title" id="thread-title">What belongs on a first CV?</h2><p>Started by Amina Koroma · 2 hours ago</p></div><span class="status-pill">Open topic</span></div>
+        <article class="post"><span class="avatar-initials" aria-label="Amina Koroma initials AK">AK</span><div><div class="post__meta"><strong>Amina Koroma</strong><span class="role-pill">Member</span><time datetime="2026-11-26T08:15">2 hours ago</time></div><p class="post__body">I am preparing my first CV for an entry-level opportunity. What are useful things to include when most of my experience comes from school and volunteering?</p><a class="post__reply" href="#reply-text">Reply</a>
+          <div class="post-replies"><article class="post"><span class="avatar-initials" aria-label="Joseph Kamara initials JK">JK</span><div><div class="post__meta"><strong>Joseph Kamara</strong><span class="role-pill">Mentor</span><time datetime="2026-11-26T08:42">1 hour ago</time></div><p class="post__body">You can describe school projects, community activities and responsibilities that show skills related to the opportunity. Keep each point clear and specific.</p><a class="post__reply" href="#reply-text">Reply</a>
+            <div class="post-replies"><article class="post"><span class="avatar-initials" aria-label="Mariatu Sesay initials MS">MS</span><div><div class="post__meta"><strong>Mariatu Sesay</strong><span class="role-pill">Member</span><time datetime="2026-11-26T09:05">1 hour ago</time></div><p class="post__body">I found it helpful to ask someone else to read the CV for clarity before sharing it.</p><a class="post__reply" href="#reply-text">Reply</a>
+              <div class="post-replies"><article class="post"><span class="avatar-initials" aria-label="Amina Koroma initials AK">AK</span><div><div class="post__meta"><strong>Amina Koroma</strong><span class="role-pill">Member</span><time datetime="2026-11-26T09:27">59 minutes ago</time></div><p class="post__body">Thank you both. I will make a draft and ask a friend to review it.</p><a class="post__reply" href="#reply-text">Reply</a></div></article></div>
+            </div></article></div>
+          </div></article></div>
+        </article>
+        <form class="reply-form form-stack" id="reply-form" action="#" method="post" data-demo-form data-demo-message="Your reply is ready to connect to the community backend.">
+          <div class="field"><label for="reply-text">Add to the conversation</label><textarea id="reply-text" name="reply_body" maxlength="300" data-character-count="reply-count" placeholder="Share a helpful, respectful reply…" required></textarea><div class="reply-counter"><span>Keep it kind and constructive.</span><output id="reply-count" for="reply-text">0 / 300</output></div></div>
+          <div class="row wrap"><button class="button button-primary" type="submit">Post reply</button><p class="form-error" data-form-notice hidden role="status"></p></div>
+        </form>
+      </section>
+    </div>
+
+    <div class="community-extra section">
+      <section class="card mentor-promo"><span class="eyebrow">Learn together</span><h2>Looking for a mentor?</h2><p>Connect with someone who can support your goals.</p><a class="button button-outline" href="mentorship.html">Browse mentors</a></section>
+      <aside class="card house-rules" aria-labelledby="house-rules-title"><span class="eyebrow">Our shared space</span><h2 id="house-rules-title">House rules</h2><ul><li>Respect everyone&apos;s views.</li><li>Care for each other.</li><li>Be honest.</li></ul></aside>
+    </div>
+  </main>
+
+  <dialog class="topic-dialog" data-topic-dialog aria-labelledby="topic-dialog-title">
+    <button class="dialog-close" type="button" aria-label="Close dialog" data-close-topic>×</button><span class="eyebrow">Start a conversation</span><h2 id="topic-dialog-title">New topic</h2>
+    <form class="form-stack" data-new-topic-form>
+      <div class="field"><label for="new-topic-title">Topic title</label><input id="new-topic-title" name="title" maxlength="100" required placeholder="What would you like to discuss?"></div>
+      <div class="field"><label for="new-topic-category">Category</label><select id="new-topic-category" name="category" required><option value="general">General</option><option value="training-help">Training Help</option><option value="careers">Careers</option><option value="mentorship">Mentorship</option></select></div>
+      <div class="field"><label for="new-topic-body">Your post</label><textarea id="new-topic-body" name="body" maxlength="500" required placeholder="Share a little context."></textarea></div>
+      <p class="small muted">This sample form is not connected to a member account.</p><div class="row wrap"><button class="button button-primary" type="submit">Post topic</button><button class="button button-quiet" type="button" data-close-topic>Cancel</button></div>
+    </form>
+  </dialog>
+
+  <!-- BEGIN SHARED FOOTER -->
+  <footer class="site-footer"><div class="container"><div class="footer-grid">
+    <nav aria-label="Explore"><h2>Explore</h2><ul><li><a href="about.html">About YMCA Sierra Leone</a></li><li><a href="events.html">Events</a></li><li><a href="resources.html">Resources</a></li><li><a href="community.html">Community</a></li></ul></nav>
+    <nav aria-label="Member links"><h2>Members</h2><ul><li><a href="index.html">Home</a></li><li><a href="login.html">Login</a></li><li><a href="signup.html">Sign up</a></li><li><a href="mentorship.html">Mentorship</a></li></ul></nav>
+    <address><h2>Contact</h2><p>32 Fort Street, Freetown, Sierra Leone<br>P.O. Box 243, Freetown</p><p><a href="tel:+23222223608">+232-22-223608</a><br><a href="tel:+23278952818">+232-78-952818</a><br>WhatsApp: <a href="https://wa.me/23278952805">+232-78-952805</a></p><p><a href="mailto:info@ymcasierraleone.org">info@ymcasierraleone.org</a><br><a href="mailto:ymcasl@yahoo.co.uk">ymcasl@yahoo.co.uk</a></p></address>
+  </div><div class="footer-bottom">Academic project, not the official YMCA Sierra Leone website.</div></div></footer><!-- END SHARED FOOTER -->
+</body>
+</html>

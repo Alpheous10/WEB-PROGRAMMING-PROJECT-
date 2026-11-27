@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFF8EE">
+  <meta name="description" content="Explore YMCA Sierra Leone member workshops, training sessions and masterclasses.">
+  <title>Events | YMCA Sierra Leone</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <!-- BEGIN SHARED HEADER -->
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="YMCA Sierra Leone home"><span class="brand-mark"><img src="assets/logo.png" alt="YMCA Sierra Leone logo"></span><span class="brand-name"><strong>YMCA SIERRA LEONE</strong><span>Members’ community</span></span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-controls="public-nav" aria-expanded="false"><span class="menu-icon" aria-hidden="true"></span><span>Menu</span></button>
+    <!-- BEGIN SHARED NAVIGATION --><nav class="site-nav" id="public-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="events.html" aria-current="page">Events</a><a href="resources.html">Resources</a><a href="community.html">Community</a><a href="login.html">Login</a><a href="signup.html">Sign up</a></nav><!-- END SHARED NAVIGATION -->
+  </div></header><!-- END SHARED HEADER -->
+
+  <main class="container page-main">
+    <header class="page-intro"><span class="eyebrow">Learn · Practise · Connect</span><h1>Events and training</h1><p>Explore workshops, training sessions and masterclasses for members.</p></header>
+
+    <section class="card event-filters" aria-labelledby="event-filter-title">
+      <div class="card-heading"><div><h2 id="event-filter-title">Find an event</h2><p>Filter the current sample listing.</p></div></div>
+      <div class="filter-row event-filter-row">
+        <fieldset class="filter-fieldset"><legend class="field-label">Category</legend><div class="chip-group" role="group" aria-label="Filter events by category"><button class="chip-filter is-active" type="button" data-event-category="all" aria-pressed="true">All</button><button class="chip-filter" type="button" data-event-category="workshops" aria-pressed="false">Workshops</button><button class="chip-filter" type="button" data-event-category="training" aria-pressed="false">Training</button><button class="chip-filter" type="button" data-event-category="masterclasses" aria-pressed="false">Masterclasses</button><button class="chip-filter" type="button" data-event-category="social" aria-pressed="false">Social</button></div></fieldset>
+        <div class="field"><label for="event-month">Month</label><select id="event-month" class="toolbar-select" data-event-month><option value="all">All months</option><option value="2026-12">December 2026</option><option value="2027-01">January 2027</option></select></div>
+        <label class="toggle-control"><input type="checkbox" data-event-registered><span class="toggle-control__track" aria-hidden="true"></span><span>Registered only</span></label>
+      </div>
+    </section>
+
+    <div class="events-layout section">
+      <section class="event-list" aria-label="Events">
+        <article class="card event-card" data-event-card data-category="training" data-month="2026-12" data-registered="false">
+          <!-- PLACEHOLDER: replace with real event data -->
+          <div class="event-card__date"><span>DEC</span><strong>12</strong><small>SAT</small></div>
+          <div class="event-card__content"><div class="event-card__heading"><div><span class="eyebrow">Training</span><h2>Community Leadership Training</h2></div><span class="status-pill">Sample listing</span></div>
+            <ul class="event-meta"><li><strong>When:</strong> <time datetime="2026-12-12T10:00">Sat 12 Dec 2026 · 10:00</time></li><li><strong>Where:</strong> Venue to be confirmed</li></ul>
+            <p>A sample listing for a member learning session.</p>
+            <div class="capacity-row"><div class="capacity-label"><span>18 of 40 places taken</span><span>45%</span></div><div class="capacity-track" role="progressbar" aria-label="Event capacity" aria-valuemin="0" aria-valuemax="40" aria-valuenow="18"><span style="--capacity:45%"></span></div></div>
+            <button class="button button-primary" type="button" data-register-event>Register</button>
+          </div>
+        </article>
+        <article class="card event-card" data-event-card data-category="masterclasses" data-month="2026-12" data-registered="true">
+          <!-- PLACEHOLDER: replace with real event data -->
+          <div class="event-card__date"><span>DEC</span><strong>19</strong><small>SAT</small></div>
+          <div class="event-card__content"><div class="event-card__heading"><div><span class="eyebrow">Masterclass</span><h2>Digital Skills Masterclass</h2></div><span class="status-pill">Sample listing</span></div>
+            <ul class="event-meta"><li><strong>When:</strong> <time datetime="2026-12-19">Sat 19 Dec 2026</time> · Time to be confirmed</li><li><strong>Where:</strong> Venue to be confirmed</li></ul>
+            <p>A sample listing for a practical digital skills session.</p>
+            <div class="capacity-row"><div class="capacity-label"><span>12 of 36 places taken</span><span>33%</span></div><div class="capacity-track" role="progressbar" aria-label="Event capacity" aria-valuemin="0" aria-valuemax="36" aria-valuenow="12"><span style="--capacity:33%"></span></div></div>
+            <button class="button button-registered" type="button" data-register-event aria-pressed="true">Registered <span aria-hidden="true">✓</span></button>
+          </div>
+        </article>
+        <article class="card event-card" data-event-card data-category="training" data-month="2027-01" data-registered="false">
+          <!-- PLACEHOLDER: replace with real event data -->
+          <div class="event-card__date"><span>JAN</span><strong>09</strong><small>SAT</small></div>
+          <div class="event-card__content"><div class="event-card__heading"><div><span class="eyebrow">Training</span><h2>Youth Career Fair Preparation</h2></div><span class="status-pill">Sample listing</span></div>
+            <ul class="event-meta"><li><strong>When:</strong> <time datetime="2027-01-09">Sat 9 Jan 2027</time> · Time to be confirmed</li><li><strong>Where:</strong> Venue to be confirmed</li></ul>
+            <p>A sample listing for members preparing for a career fair.</p>
+            <div class="capacity-row"><div class="capacity-label"><span>40 of 40 places taken</span><span>Full</span></div><div class="capacity-track" role="progressbar" aria-label="Event capacity" aria-valuemin="0" aria-valuemax="40" aria-valuenow="40"><span style="--capacity:100%"></span></div></div>
+            <button class="button button-disabled" type="button" disabled>Full</button>
+          </div>
+        </article>
+        <p class="empty-state" data-event-empty hidden>No events match these filters. Try another category or month.</p>
+      </section>
+
+      <aside class="event-sidebar stack">
+        <section class="card" aria-labelledby="participation-title"><div class="card-heading"><div><span class="eyebrow">Your activity</span><h2 id="participation-title">My participation</h2></div></div>
+          <p class="small muted">Sample account activity</p>
+          <!-- PLACEHOLDER: replace with member-specific participation data -->
+          <ul class="participation-list"><li><span><strong>Leadership Circle</strong><small>Sample past event</small></span><span class="status-pill status-pill--good">Attended</span></li><li><span><strong>Digital Skills Masterclass</strong><small>19 Dec 2026</small></span><span class="status-pill status-pill--pending">Upcoming</span></li></ul>
+        </section>
+        <section class="card host-card" aria-labelledby="host-event-title"><div class="card-heading"><div><span class="eyebrow">Space for your gathering</span><h2 id="host-event-title">Host your event at the YMCA</h2></div></div>
+          <p>A 100-seat, well-ventilated hall is available for workshops, seminars and social events. Computers, photocopiers, a projector and screen can be used during events at a moderate cost. Arrangements are made through reception.</p>
+          <a class="button button-primary" href="about.html#contact">Contact reception</a>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <!-- BEGIN SHARED FOOTER -->
+  <footer class="site-footer"><div class="container"><div class="footer-grid">
+    <nav aria-label="Explore"><h2>Explore</h2><ul><li><a href="about.html">About YMCA Sierra Leone</a></li><li><a href="events.html">Events</a></li><li><a href="resources.html">Resources</a></li><li><a href="community.html">Community</a></li></ul></nav>
+    <nav aria-label="Member links"><h2>Members</h2><ul><li><a href="index.html">Home</a></li><li><a href="login.html">Login</a></li><li><a href="signup.html">Sign up</a></li><li><a href="mentorship.html">Mentorship</a></li></ul></nav>
+    <address><h2>Contact</h2><p>32 Fort Street, Freetown, Sierra Leone<br>P.O. Box 243, Freetown</p><p><a href="tel:+23222223608">+232-22-223608</a><br><a href="tel:+23278952818">+232-78-952818</a><br>WhatsApp: <a href="https://wa.me/23278952805">+232-78-952805</a></p><p><a href="mailto:info@ymcasierraleone.org">info@ymcasierraleone.org</a><br><a href="mailto:ymcasl@yahoo.co.uk">ymcasl@yahoo.co.uk</a></p></address>
+  </div><div class="footer-bottom">Academic project, not the official YMCA Sierra Leone website.</div></div></footer><!-- END SHARED FOOTER -->
+</body>
+</html>

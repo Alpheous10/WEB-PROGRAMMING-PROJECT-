@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#FFF8EE"><title>Member dashboard | YMCA Sierra Leone</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body>
+  <!-- BEGIN SHARED HEADER -->
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="YMCA Sierra Leone home"><span class="brand-mark"><img src="assets/logo.png" alt="Y"></span><span class="brand-name"><strong>YMCA SIERRA LEONE</strong><span>Members’ community</span></span></a><button class="nav-toggle" type="button" data-nav-toggle aria-controls="member-nav" aria-expanded="false"><span aria-hidden="true">☰</span><span>Menu</span></button><!-- BEGIN SHARED NAVIGATION --><nav class="site-nav" id="member-nav" aria-label="Member navigation"><a href="index.html">Home</a><a href="dashboard.html" aria-current="page">Dashboard</a><a href="index.html#bulletin">Events</a><a href="index.html#values">Resources</a><a href="community.html">Community</a><a href="mentorship.html">Mentorship</a><a class="button button-danger button-small" href="login.html">Log Out</a></nav><!-- END SHARED NAVIGATION --></div></header><!-- END SHARED HEADER -->
+  <main class="container page-main">
+    <div class="grid dashboard-grid">
+      <section class="card welcome-card" aria-labelledby="welcome-title">
+        <div class="profile-avatar" id="profile-photo" role="img" aria-label="Profile initials AC">AC</div>
+        <div class="welcome-copy"><span class="eyebrow">Member hub</span><h1 id="welcome-title">Welcome back, <!-- PHP: echo member name -->Alpheous M. Conteh</h1><p><!-- PHP: echo member email and join date -->alpheous@example.com · Member since 17 October 2026</p><div class="welcome-meta"><span class="role-pill">Member</span><span class="meta-pill">Digital Skills</span><span class="meta-pill">Leadership</span><span class="meta-pill">Faith and Service</span></div></div>
+        <a class="photo-action" href="#profile-photo" aria-label="Change your profile photo">Change photo</a>
+      </section>
+
+      <section class="card" aria-labelledby="progress-title">
+        <div class="card-heading"><div><h2 id="progress-title">Training Progress</h2><p>Keep up your steady progress.</p></div><span class="eyebrow">This term</span></div>
+        <div class="ring-layout"><!-- PHP: echo training progress percentage -->
+          <div class="progress-ring" style="--progress: 75" role="img" aria-label="75 percent complete"><div class="progress-ring__center"><strong><!-- PHP: echo progress percentage -->75%</strong><span>complete</span></div></div><div><h3><!-- PHP: echo training track name -->Digital Skills Workshop</h3><p class="muted"><!-- PHP: echo completed and total sessions -->6 of 8 sessions complete</p></div></div>
+        <div class="progress-bars"><!-- PHP: echo Leadership Basics progress percentage -->
+          <div class="progress-item"><span>Leadership Basics</span><strong>40%</strong><div class="progress-item__track" role="progressbar" aria-label="Leadership Basics" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40"><div class="progress-item__fill" style="--progress: 40"></div></div></div><!-- PHP: echo Career Readiness progress percentage -->
+          <div class="progress-item"><span>Career Readiness</span><strong>20%</strong><div class="progress-item__track" role="progressbar" aria-label="Career Readiness" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20"><div class="progress-item__fill" style="--progress: 20"></div></div></div></div>
+      </section>
+
+      <section class="card" aria-labelledby="events-title">
+        <div class="card-heading"><div><h2 id="events-title">Upcoming Events and Masterclasses</h2><p>Make time to learn together.</p></div></div>
+        <div class="timeline">
+          <article class="timeline-item"><h3>Community Leadership Training</h3><p>Sat 12 Dec 2026 · 10:00<br>32 Fort Street</p><span class="status-pill status-pill--good"><!-- PHP: echo event registration status -->Registered</span></article>
+          <article class="timeline-item"><h3>Digital Skills Masterclass</h3><p>Sat 19 Dec · 09:30<br>YMCA Skills Centre</p><a class="button button-outline button-small" href="login.html">Register</a></article>
+          <article class="timeline-item"><h3>Youth Career Fair Prep</h3><p>Sat 9 Jan 2027 · 11:00<br>32 Fort Street</p><a class="button button-outline button-small" href="login.html">Register</a></article>
+        </div><div class="card-actions"><a href="index.html#bulletin">View all events</a></div>
+      </section>
+
+      <section class="card" id="resource-library" aria-labelledby="resource-title">
+        <div class="card-heading"><div><h2 id="resource-title">Resource Library</h2><p>Practical guides for your next step.</p></div><span class="eyebrow"><!-- PHP: echo new resource count -->3 new</span></div>
+        <div class="resource-list">
+          <!-- PLACEHOLDER: replace with real content -->
+          <!-- REPEATABLE: one resource card per database row -->
+          <!-- PHP: echo resource title and metadata -->
+          <div class="resource-row"><span class="resource-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v3h14v-3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><a href="#resource-library"><!-- PHP: echo resource title -->Career Guidance Handbook</a><small>PDF · 1.2 MB</small></div></div>
+          <div class="resource-row"><span class="resource-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v3h14v-3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><a href="#resource-library">Intro to Web Basics</a><small>Week 1 notes · PDF</small></div></div>
+          <div class="resource-row"><span class="resource-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v3h14v-3" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><a href="#resource-library">CV and Interview Checklist</a><small>Checklist · PDF</small></div></div>
+        </div><div class="card-actions"><a href="#resource-library">Browse library</a></div>
+      </section>
+
+      <section class="card" aria-labelledby="community-title">
+        <div class="card-heading"><div><h2 id="community-title">Community</h2><p>Ideas and encouragement from members.</p></div></div>
+        <div class="discussion-list"><div class="discussion-row"><a href="community.html">What helped you finish your first CV?</a><p class="small muted"><!-- PHP: echo reply count -->8 replies · Career Corner</p></div><div class="discussion-row"><a href="community.html">Starting a small garden project in your community</a><p class="small muted"><!-- PHP: echo reply count -->5 replies · Livelihoods</p></div></div>
+        <div class="mentor-suggestion"><span class="avatar-initials" aria-label="Mentor initials FK">FK</span><div><strong>Suggested mentor: <!-- PHP: echo mentor name -->Fatu K.</strong><p class="small muted">Small business and livelihoods</p></div></div><div class="card-actions"><a class="button button-outline button-small" href="mentorship.html">Request mentorship</a><a href="community.html">Open community</a></div>
+      </section>
+    </div>
+  </main>
+  <!-- BEGIN SHARED FOOTER -->
+  <footer class="site-footer"><div class="container"><div class="footer-grid"><section><h2>YMCA Sierra Leone</h2><p>Learn together, serve with purpose and build a future with opportunity.</p></section><nav aria-label="Footer links"><h2>Member links</h2><ul><li><a href="dashboard.html">Member dashboard</a></li><li><a href="community.html">Discussion community</a></li><li><a href="mentorship.html">Find a mentor</a></li></ul></nav><address><h2>Visit us</h2><p>32 Fort Street<br>Freetown, Sierra Leone</p><p>Office hours: Monday–Friday, 09:00–16:30</p></address></div><div class="footer-bottom">Academic project, not the official YMCA Sierra Leone website.</div></div></footer><!-- END SHARED FOOTER -->
+</body></html>
